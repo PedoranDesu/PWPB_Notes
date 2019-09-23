@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10sp"
+    android:layout_margin="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+        
+        <TextView
+            style="@style/TVNotes"
+            android:text="@string/sample_date"
+            android:id="@+id/tvNoteDate"
+            />
+        <TextView
+            style="@style/TVNotes.Large"
+            android:text="@string/sample_title"
+            android:id="@+id/tvNoteTitle"
+            />
+
+        <TextView
+            style="@style/TVNotes"
+            android:text="@string/sample_content"
+            android:id="@+id/tvNoteContent"
+            />
+        
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

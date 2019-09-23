@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InputNote">
+
+    <TextView
+    android:layout_marginLeft="@dimen/default_margin"
+    style="@style/TVNotes.Large"
+    android:text="TITLE"
+    />
+
+    <EditText
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTitle"
+        />
+
+    <TextView
+        android:layout_marginLeft="@dimen/default_margin"
+        style="@style/TVNotes.Large"
+        android:text="DESCRIPTION"
+        />
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtContent"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnInput"
+        />
+
+</LinearLayout>
